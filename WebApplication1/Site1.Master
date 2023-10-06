@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+        <style>
+  body {
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+}
+
+main {
+    padding: 10px;
+}
+
+nav {
+  
+   
+    background-color: #808080;
+    padding: 5px;
+    width:2836px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    color: #F1FAEE;
+    font-size: 17px;
+    width: 120px;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+li {
+    display: inline;
+    padding-left: 2px;
+    column-width: 20px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover {
+    background-color: #CCC;
+    color: #000;
+}
+
+footer {
+    background-color: #808080;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px;
+    margin: 5px auto 0 auto;
+}
+    </style>
+    
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav>
+  <ul>
+    <li><a href="girisyap.aspx">Giriş yap</a></li>
+    <li><a href="kaydol.aspx">kaydol</a></li>
+    <li><a href="StokListesi.aspx">Stok Listesi</a></li>
+
+  </ul>
+</nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
